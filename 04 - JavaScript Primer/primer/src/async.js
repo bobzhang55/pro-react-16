@@ -4,7 +4,7 @@ export function asyncAdd(values) {
     return new Promise(callback =>
         setTimeout(() => {
             let total = sumValues(values);
-            console.log(`Async Total: ${total}`);
+            console.log(`Inside Promise --- Async Total: ${total}`);
             callback(total);
         }, 500));
 }

@@ -15,17 +15,17 @@ export class Shop extends Component {
             <div className="row">
                 <div className="col bg-dark text-white">
                     <div className="navbar-brand">SPORTS STORE</div>
-                    <CartSummary { ...this.props } />
+                    <CartSummary {...this.props} />
                 </div>
-            </div>        
+            </div>
             <div className="row">
                 <div className="col-3 p-2">
-                    <CategoryNavigation baseUrl="/shop/products" 
-                        categories={ this.props.categories } />
+                    <CategoryNavigation baseUrl="/shop/products"
+                        categories={this.props.categories} />
                 </div>
                 <div className="col-9 p-2">
-                    <ProductList products={ this.props.products } 
-                        addToCart={ this.handleAddToCart } />
+                    <ProductList products={this.props.products}
+                        addToCart={this.handleAddToCart} />
                 </div>
             </div>
         </div>
